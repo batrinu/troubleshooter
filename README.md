@@ -1,56 +1,57 @@
-# TROUBLESHOOTER
+# troubleshooter
 
-## Introduction
-This a help desk application designed to support an organization's employees. Its runs on NodeJS and is developed using Javascript technologies: React, Mobx, FeathersJS and Mongodb.
+> CRUD with MobX React Feathers and more
 
-##  How to install
+## About
 
-```bash
-git clone git@github.com:brandiqa/troubleshooter.git
-cd troubleshooter
+This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
 
-# Install frontend dependencies
-npm install
+## Getting Started
 
-# Install backend dependencies
-cd backend
-npm install
+Getting up and running is as easy as 1, 2, 3.
+
+1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
+2. Install your dependencies
+
+    ```
+    cd path/to/troubleshooter; npm install
+    ```
+
+3. Start your app
+
+    ```
+    npm start
+    ```
+
+## Testing
+
+Simply run `npm test` and all your tests in the `test/` directory will be run.
+
+## Scaffolding
+
+Feathers has a powerful command line interface. Here are a few things it can do:
+
+```
+$ npm install -g feathers-cli             # Install Feathers CLI
+
+$ feathers generate service               # Generate a new Service
+$ feathers generate hook                  # Generate a new Hook
+$ feathers generate model                 # Generate a new Model
+$ feathers help                           # Show all commands
 ```
 
-## How to run
-Ensure you have mongodb installed in your system and that it is running
+## Help
 
-Inside the project root folder, create a file and name it .env. Paste the following content and save the file:
+For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
 
-```env
-# babel
-REACT_APP_BABEL_STAGE_0=true
-REACT_APP_DECORATORS=true
-```
+## Changelog
 
+__0.1.0__
 
-### Start the backend server
-Start the backend server first:
+- Initial release
 
-```bash
-cd troubleshooter/backend
-npm start
-```
-This will run the backend server at localhost:3030. If all is working well, you should be able to access the url http://localhost:3030/contacts from your Browser or Postman
+## License
 
+Copyright (c) 2016
 
-### Start the client
-Open a separate terminal to start the client:
-
-```bash
-cd troubleshooter
-npm start
-```
-
-Your default web browser will be launched automatically with the url http://localhost:3000
-
-### Default Credentials
-You will be present with the login screen. Login as admin and create other users:
-
-email: admin@example.com
-password: admin
+Licensed under the [MIT license](LICENSE).
